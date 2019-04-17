@@ -47,7 +47,7 @@ _addon.name = 'Rune Master'
 _addon.author = 'Arusia von Sotto'
 _addon.version = '0.1'
 _addon.language = 'english'
-_addon.command = 'rnmstr'
+_addon.command = 'rm'
 
 files = require('files')
 chat = require('chat')
@@ -197,10 +197,76 @@ function compare_buffs()
 			windower.add_to_chat(2, 'Missing Gelus')
 		end			
 	else 
-		if WantedBuffs['Ignis'] ~= 0 then
+		if WantedBuffs['Gelus'] ~= 0 then
 			windower.add_to_chat(2, 'Have Gelus')
 		end
-	end	
+	end
+	if HaveBuffs['Flabra'] ~= WantedBuffs['Flabra'] then
+		if HaveBuffs['Flabra'] > WantedBuffs['Flabra'] then 
+			windower.add_to_chat(2, 'Too Much Flabra')
+		else
+			windower.add_to_chat(2, 'Missing Flabra')
+		end			
+	else 
+		if WantedBuffs['Flabra'] ~= 0 then
+			windower.add_to_chat(2, 'Have Flabra')
+		end
+	end
+	if HaveBuffs['Unda'] ~= WantedBuffs['Unda'] then
+		if HaveBuffs['Unda'] > WantedBuffs['Unda'] then 
+			windower.add_to_chat(2, 'Too Much Unda')
+		else
+			windower.add_to_chat(2, 'Missing Unda')
+		end			
+	else 
+		if WantedBuffs['Unda'] ~= 0 then
+			windower.add_to_chat(2, 'Have Unda')
+		end
+	end
+	if HaveBuffs['Tellus'] ~= WantedBuffs['Tellus'] then
+		if HaveBuffs['Tellus'] > WantedBuffs['Tellus'] then 
+			windower.add_to_chat(2, 'Too Much Tellus')
+		else
+			windower.add_to_chat(2, 'Missing Tellus')
+		end			
+	else 
+		if WantedBuffs['Tellus'] ~= 0 then
+			windower.add_to_chat(2, 'Have Tellus')
+		end
+	end
+	if HaveBuffs['Sulpor'] ~= WantedBuffs['Sulpor'] then
+		if HaveBuffs['Sulpor'] > WantedBuffs['Sulpor'] then 
+			windower.add_to_chat(2, 'Too Much Sulpor')
+		else
+			windower.add_to_chat(2, 'Missing Sulpor')
+		end			
+	else 
+		if WantedBuffs['Sulpor'] ~= 0 then
+			windower.add_to_chat(2, 'Have Sulpor')
+		end
+	end
+	if HaveBuffs['Lux'] ~= WantedBuffs['Lux'] then
+		if HaveBuffs['Lux'] > WantedBuffs['Lux'] then 
+			windower.add_to_chat(2, 'Too Much Lux')
+		else
+			windower.add_to_chat(2, 'Missing Lux')
+		end			
+	else 
+		if WantedBuffs['Lux'] ~= 0 then
+			windower.add_to_chat(2, 'Have Lux')
+		end
+	end
+	if HaveBuffs['Tenebrae'] ~= WantedBuffs['Tenebrae'] then
+		if HaveBuffs['Tenebrae'] > WantedBuffs['Tenebrae'] then 
+			windower.add_to_chat(2, 'Too Much Tenebrae')
+		else
+			windower.add_to_chat(2, 'Missing Tenebrae')
+		end			
+	else 
+		if WantedBuffs['Tenebrae'] ~= 0 then
+			windower.add_to_chat(2, 'Have Tenebrae')
+		end
+	end
 end
 
 function start()
