@@ -1,4 +1,4 @@
-# runemaster
+# AutoRUN
 FFXI Addon for RUN, only works with Windower.
 Designed to keep Runes active at all times.
 
