@@ -26,8 +26,8 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ]]
 	
-_addon.name = 'Rune Master'
-_addon.author = 'Arusia von Sotto'
+_addon.name = 'AutoRA'
+_addon.author = 'TheMobDoctor'
 _addon.version = '0.1'
 _addon.language = 'english'
 _addon.command = 'ar'
