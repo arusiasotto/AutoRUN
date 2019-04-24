@@ -1,5 +1,5 @@
 --[[
-Copyright © 2019, TheMobDoctor
+Copyright © 2019, Arusia von Sotto
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
@@ -17,7 +17,7 @@ modification, are permitted provided that the following conditions are met:
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL TheMobDoctor BE LIABLE FOR ANY
+DISCLAIMED. IN NO EVENT SHALL Arusia von Sotto BE LIABLE FOR ANY
 DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
 (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
 LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
@@ -26,8 +26,8 @@ ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ]]
 	
-_addon.name = 'AutoRA'
-_addon.author = 'TheMobDoctor'
+_addon.name = 'Rune Master'
+_addon.author = 'Arusia von Sotto'
 _addon.version = '0.1'
 _addon.language = 'english'
 _addon.command = 'ar'
@@ -144,7 +144,7 @@ function activeBuffs()
 				activeRunes['tellus'] = activeRunes['tellus'] + 1
 			end 		
 		elseif v == 527 then 
-			if activeBuffs['sulpor'] == nil then
+			if activeRunes['sulpor'] == nil then
 				activeRunes['sulpor'] = 1
 			else
 				activeRunes['sulpor'] = activeRunes['sulpor'] + 1 
